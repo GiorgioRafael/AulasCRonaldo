@@ -24,12 +24,16 @@ Create table Pessoa(
 CPF numeric(11) Primary Key,
 PrimeiroNome varChar(35) NOT NULL,
 Sobrenome varChar(35) NOT NULL,
-Cidade varChar(35) NOT NULL
-Endereço varChar(90) NOT NULL,
+Cidade varChar(35) NOT NULL,
+BAIRRO varChar(45) NOT NULL,
+CIDADE varChar(30) NOT NULL,
+ESTADO varChar(30) NOT NULL,
+CEP numeric(8) NOT NULL
 );
 
 Create table Carro(
 Id_Carro numeric(10) Primary Key,
 Nome varChat(35) NOT NULL,
-Marca varChar(35) NOT NULL
+Marca varChar(35) NOT NULL,
+Preco int NOT NULL
 );
