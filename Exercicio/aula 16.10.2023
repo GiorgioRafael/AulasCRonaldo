@@ -1,0 +1,35 @@
+Atividade aula dia 16/10/2023
+
+Corrigir
+
+
+Create table Pessoa(
+Id_Pessoa int Primary Key,
+Nome varChar(255),
+Endereço varChar(255),
+cidade varChar(255)
+);
+
+Create table Carro(
+Id_Carro int Primary Key,
+Nome varChat(255),
+Marca varChar(255)
+);
+
+
+CORREÇÃO
+
+
+Create table Pessoa(
+CPF numeric(11) Primary Key,
+PrimeiroNome varChar(35) NOT NULL,
+Sobrenome varChar(35) NOT NULL,
+Cidade varChar(35) NOT NULL
+Endereço varChar(90) NOT NULL,
+);
+
+Create table Carro(
+Id_Carro numeric(10) Primary Key,
+Nome varChat(35) NOT NULL,
+Marca varChar(35) NOT NULL
+);
